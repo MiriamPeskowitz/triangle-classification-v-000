@@ -1,14 +1,15 @@
 class Triangle
-  attr_accessor :length1, :length2, :length3
-  def initialize(length1, length2, length3)
-    @length1 = length1
-    @length2 = length2
-    @length3 = length3
+  attr_accessor :a, :b, :c
+
+  def initialize(a, b, c)
+    @a = a
+    @b = b
+    @c = c
   end
 
   def kind
     validate_the_triangle
-    if   a==b && b++c 
+    if   a==b && b++c
       :equilateral
     elsif a == b || b == c || a == c
       :isosceles
@@ -16,7 +17,7 @@ class Triangle
      :scalene
    end
   end
-    
+
   
 
   def validate_the_triangle
