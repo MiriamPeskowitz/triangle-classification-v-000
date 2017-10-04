@@ -18,7 +18,7 @@ class Triangle
    end
   end
 
-  
+
 
   def validate_the_triangle
       real_triangle = [(a + b > c), (a + c > b), (b + c > a)]
@@ -31,3 +31,4 @@ class TriangleError < StandardError
   def message
     "Not so good yet!"
   end
+end 
