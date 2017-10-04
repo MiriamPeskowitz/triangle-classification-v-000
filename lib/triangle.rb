@@ -31,4 +31,4 @@ class TriangleError < StandardError
   def message
     "Not so good yet!"
   end
-end 
+end
